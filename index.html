@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Crypto Clicker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI Crypto Clicker</h1>
+    <p>Игрок: <strong id="playerName">—</strong></p>
+    <p>Твои токены: <span id="coins">0</span> 🪙</p>
+    <p>Уровень: <span id="level">1</span> ⚡</p>
+
+    <div id="click-area">
+      <img src="https://i.ibb.co/nfV2X6j/ai-coin.png" alt="AI Coin" id="coin">
+      <p>Нажимай на монету!</p>
+    </div>
+
+    <h2>🛒 Магазин</h2>
+    <div id="shop"></div>
+
+    <h3>Мемные апгрейды</h3>
+    <div id="meme-shop"></div>
+
+    <h2>🎖 Достижения</h2>
+    <ul id="achievements"></ul>
+
+    <h2>🌍 Лидеры</h2>
+    <ol id="leaderboard"></ol>
+
+    <p class="notes">P.S. Премиум-апгрейды доступны после ручной активации премиума в Firebase Console (поле `premium: 1` у игрока).</p>
+  </div>
+</body>
+</html>
